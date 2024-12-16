@@ -1,0 +1,233 @@
+/* .description{
+    border: 2px solid black;
+} */
+/* 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ body{
+    height: 100vh;
+    width: 100vw;
+    background: conic-gradient(at bottom left, #0f172a, #334155);
+    background-repeat: no-repeat;
+ }
+
+.hush-logo{
+    height: 15%;
+    width: 15%;
+
+    margin-top: 5vh;
+    margin-left: 2vw;
+} */
+
+
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1f1f2e, #2a2d4a);
+            color: #fff;
+            height: 100vh;
+            /* overflow: hidden; */
+            
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background: transparent;
+        }
+
+       
+
+        nav a {
+            margin-left: 30px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4ec3ff;
+        }
+
+        .btn-register {
+            border: 1px solid #4ec3ff;
+            padding: 8px 15px;
+            border-radius: 25px;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .btn-register:hover {
+            background: #4ec3ff;
+            color: #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            margin-top: 0px;
+            font-size: 10rem;
+            letter-spacing: 10px;
+            color: #ffffff;
+            text-shadow: 0 0 10px #4ec3ff, 0 0 20px #4ec3ff;
+            margin-bottom: 70px;
+            animation: fadeIn 2s ease;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #bbb;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .hero button, .hero .btn-info {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            border-radius: 20px;
+            color: #000;
+            background: #4ec3ff;
+            transition: background 0.3s;
+        }
+
+        .hero button:hover, .hero .btn-info:hover {
+            background: #37a0e6;
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+header{
+    /* align-items: center; */
+    display: flex;
+    justify-content: center;
+}
+
+
+/* form{
+    display: grid; grid-auto-flow: column; align-items: center;
+} */
+.input-form{
+
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f4f4f9; */
+}
+
+.form-container {
+    /* background: #ffffff; */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px white;
+    max-width: 300px;
+    width: 100%;
+  }
+
+  .form-container h2 {
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 0 4px 10px white ;
+    text-align: center;
+  }
+
+  /* Input Fields */
+  .form-container .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #c4b9b9;
+  }
+
+  .form-container input,
+  .form-container select {
+    width: 90%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background: #f9f9f9;
+  }
+
+  .form-container input:focus,
+  .form-container select:focus {
+    border-color: #6c63ff;
+    background: #fff;
+  }
+
+  /* Submit Button */
+  .form-container button {
+    width: 30%;
+    display: block;
+    margin: 0 auto; 
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #6c63ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .form-container button:hover {
+    background: #5846c5;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 480px) {
+    .form-container {
+      padding: 15px;
+    }
+
+    .form-container h2 {
+      font-size: 18px;
+    }
+  }
+
+  /* Hover Effect ONLY on the Form Container */
+.input-form .form-container:hover {
+    box-shadow: 0px 0px 40px 5px white;
+    transition: box-shadow 0.3s ease;
+}
